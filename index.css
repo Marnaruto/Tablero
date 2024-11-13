@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    width: 800px;
+}
+
+.contenedor-tablero {
+    align-items: center;
+    display: flex;
+    height: 610px;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+}
+
+.tablero-ajedrez {
+    border: 2px solid black;
+    display: grid;
+    font-size: 60px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.casillas-blancas {
+    background-color: #685555;
+}
+
+.casillas-negras {
+    background-color: #ff5e00;
+}
+
+.letras, .numeros {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.letras.arriba {
+    top: -30px;
+}
+
+.letras.inferior {
+    bottom: -30px;
+}
+
+.numeros.iquierda {
+    height: 100%;
+    justify-content: space-between;
+    left: -600px;
+    top: 0;
+    writing-mode: vertical-rl;
+}
+
+.numeros.derecho {
+    height: 100%;
+    justify-content: space-between;
+    right: -45px;
+    top: 0;
+    writing-mode: vertical-rl;
+}
